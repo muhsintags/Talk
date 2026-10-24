@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: talk
+Version: 1.0.0
+Summary: TALK - Natural language to safe bash command assistant
+Author: TALK contributors
+License: MIT
+Keywords: cli,assistant,bash,security,ai,terminal
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: X11
+Classifier: Intended Audience :: End Users
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# TALK
+
+TALK converts natural-language requests into safe Bash commands and executes them with a security gate before running.
+
+## Features
+
+- Natural language to shell command generation
+- Risk analysis before command execution
+- CLI and desktop GUI
+- Safe execution with output streaming
+- Local history and config persistence
+
+## Quick start
+
+```bash
+python -m pip install -e .
+talk --help
+talk --gui
+```
+
+## Security note
+
+This tool analyzes commands for destructive or dangerous patterns before execution. It is designed to reduce accidental shell risk, but users should still review commands carefully when using AI-generated shell actions.

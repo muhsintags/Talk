@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+talk.py
+talk_gui.py
+talk.egg-info/PKG-INFO
+talk.egg-info/SOURCES.txt
+talk.egg-info/dependency_links.txt
+talk.egg-info/entry_points.txt
+talk.egg-info/top_level.txt
+talk_core/__init__.py
+talk_core/config.py
+talk_core/executor.py
+talk_core/history.py
+talk_core/llm.py
+talk_core/models.py
+talk_core/security.py
+tests/test_security.py

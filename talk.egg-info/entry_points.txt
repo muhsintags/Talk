@@ -1,0 +1,3 @@
+[console_scripts]
+talk = talk:main
+talk-gui = talk_gui:main

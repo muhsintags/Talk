@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 -m py_compile talk\\.py talk_gui\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
