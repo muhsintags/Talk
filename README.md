@@ -21,10 +21,10 @@ TALK sadece komut üretmekle kalmaz; riskli komutları tespit eder, masaüstü v
 
 Model bir komut ürettiğinde veya kullanıcı komut üzerinde değişiklik yaptığında `security.py` motoru anlık olarak devreye girer. Yüksek riskli (örneğin toplu dosya silme) komutlarda hem CLI hem de GUI üzerinde belirgin risk etiketleri (`YÜKSEK RİSK`) gösterilir.
 
-![GUI Risk Uyarısı](https://raw.githubusercontent.com/muhsintags/Talk/main/assets/image_711bb2.png)
-*Şekil 1: Masaüstündeki Python dosyalarını silmeye çalışırken arayüzde tetiklenen `YÜKSEK RİSK` uyarısı.*
+![Yüksek Risk Uyarısı](Photos/1.png)
+*Şekil 1: Masaüstündeki Python dosyalarını silmeye çalışırken arayüzde tetiklenen YÜKSEK RİSK uyarısı.*
 
-![CLI Komut Akışı ve Risk Uyarısı](https://raw.githubusercontent.com/muhsintags/Talk/main/assets/image_711e5b.png)
+![CLI Komut Üretimi ve Güvenlik Analizi](Photos/2.png)
 *Şekil 2: CLI üzerinde doğal dilden komuta dönüştürme, güvenlik uyarısı ve canlı çalıştırma adımları.*
 
 ---
@@ -39,14 +39,16 @@ TALK'ın doğal dil algılama yeteneği sayesinde karmaşık veya riskli dosya i
    → **Önerilen Komut:** `rm /home/ms/Desktop/*.json`
 
 #### 🔴 Öncesi (Before)
+
 Masaüstü yüzlerce geçici `.py`, `.json` ve test dosyasıyla tamamen karmaşık durumdadır:
 
-![Masaüstü Temizlenmeden Önce](https://raw.githubusercontent.com/muhsintags/Talk/main/assets/image_711e7f.jpg)
+![Masaüstü Temizlik Öncesi](Photos/3.png)
 
 #### 🟢 Sonrası (After)
+
 TALK komutları onaylanıp çalıştırıldıktan sonra, tüm hedef dosyalar güvenle temizlenir ve geriye yalnızca ana dizinler ile proje klasörleri kalır:
 
-![Masaüstü Temizlendikten Sonra](https://raw.githubusercontent.com/muhsintags/Talk/main/assets/image_711e9c.jpg)
+![Masaüstü Temizlik Sonrası](Photos/4.png)
 
 ---
 
@@ -103,7 +105,8 @@ Talk/
 │       ├── providers.py    # Gemini & Groq entegrasyonu
 │       ├── registry.py     # Model yönlendirme ve fallback
 │       └── types.py
-├── assets/                 # Ekran görüntüleri, logo ve uygulama ikonları
+├── Photos/                 # Ekran görüntüleri (1.png, 2.png, 3.png, 4.png)
+├── assets/                 # Logo ve uygulama ikonları
 ├── tests/                  # Güvenlik, onay ve geçmiş birim testleri
 └── talk.egg-info/
 ```
